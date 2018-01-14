@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #parent > p {
+            color: red;
+        }
+        #parent div p {
+            font-size: 20px;
+            color: blue;
+        }
+        #parent + p {
+            color: orange;
+            font-size: 20px;
+        }
+        #parent ~ p {
+            color: orange;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Combinators</h1>
+
+    <div id="parent">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim atque perspiciatis dicta, error amet consectetur eius eos a fuga deleniti, exercitationem tempora est repellendus quasi commodi, neque omnis. Distinctio, beatae!
+        </p>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem necessitatibus illo fugit velit, odio provident voluptas qui aliquid expedita perspiciatis architecto nesciunt sint nulla suscipit ipsam magnam blanditiis illum totam?
+            </p>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi blanditiis, asperiores voluptas dolore eius reprehenderit dignissimos sequi perspiciatis nihil, repellat numquam, neque modi hic ipsam maxime animi itaque debitis aliquam!
+        </p>
+    </div>
+<hr>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur itaque perspiciatis quaerat at! Eos quae maxime necessitatibus corporis animi, qui maiores a beatae eaque autem ipsum. Nemo vel quo amet.
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis hic pariatur libero alias animi sed odio, corrupti quisquam odit nulla facere, laudantium, delectus aliquam deleniti voluptates ipsam nesciunt iusto! Officiis.
+    </p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam suscipit culpa illum obcaecati et asperiores necessitatibus, dolor possimus, qui ad quae officia similique odio sunt veritatis doloribus laudantium fugiat neque?</p>
+    
+</body>
+</html>
