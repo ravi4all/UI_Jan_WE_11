@@ -1,0 +1,32 @@
+body {
+    background-image: url(https://statics.sportskeeda.com/wp-content/uploads/2013/11/wc2-2013208.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0px;
+    background-attachment: fixed;
+}
+
+/* Parallax Effect */
+
+div {
+    height: 600px;
+    background-size: 100% 100%;
+    margin-bottom: 600px;
+    background-attachment: fixed;
+}
+
+#div_1 {
+    background-image: url("http://i.telegraph.co.uk/multimedia/archive/02698/tendulkar_2698039b.jpg");
+}
+#div_2 {
+    background-image: url("http://cricketaddictor.com/wp-content/uploads/2017/12/Sachin-tendulkar-india.jpg");
+}
+#div_3 {
+    background-image: url("https://www.socialsamosa.com/wp-content/uploads/2015/11/sachin-tendulkar.jpg");
+}
+#div_4 {
+    background-image: url("http://img01.ibnlive.in/ibnlive/uploads/2017/06/MS-Dhoni_Getty.jpg");
+}
+#div_5 {
+    background-image: url("https://akm-img-a-in.tosshub.com/indiatoday/images/story/201701/647_010517091159.jpg");
+}
