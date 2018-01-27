@@ -1,0 +1,36 @@
+/* #parent div {
+    min-height: 300px;
+} */
+#parent {
+    background-color: orange;
+    /* height: 400px; */
+}
+.column_1 {
+    float: left;
+    width: 30%;
+    /* background-color: lightblue; */
+}
+
+.column_2 {
+    float: left;
+    /* float: right; */
+    width: 40%;
+    /* margin: 0px 40px; */
+    /* background-color: lightcoral; */
+}
+
+.column_3 {
+    /* float: left; */
+    float: right;
+    width: 30%;
+    background-color: lightgreen;
+}
+
+.blank {
+    /* clear: both; */
+}
+
+.div_1 {
+    background-color: lightseagreen;
+    clear: both;
+}
