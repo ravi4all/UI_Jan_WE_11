@@ -1,3 +1,13 @@
+/* 
+Pseudo Element - After and Before
+ */
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
 /* #parent div {
     min-height: 300px;
 } */
