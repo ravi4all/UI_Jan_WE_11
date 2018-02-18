@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            height: 500px;
+            /* background: linear-gradient(red, yellow, blue, green, orange, purple); */
+            /* background: linear-gradient(45deg, red, yellow, blue, green, orange, purple); */
+            /* background: linear-gradient(orange, rgba(255,255,255,0.5), green); */
+            background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,255,1) 0%, rgba(0,0,0,1) 100%); /* ff3.6+ */
+            background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(0,0,255,1)), color-stop(100%, rgba(0,0,0,1))); /* safari4+,chrome */
+            background:-webkit-radial-gradient(center, ellipse cover, rgba(0,0,255,1) 0%, rgba(0,0,0,1) 100%); /* safari5.1+,chrome10+ */
+            background: -o-radial-gradient(center, ellipse cover, rgba(0,0,255,1) 0%, rgba(0,0,0,1) 100%); /* opera 11.10+ */
+            background: -ms-radial-gradient(center, ellipse cover, rgba(0,0,255,1) 0%, rgba(0,0,0,1) 100%); /* ie10+ */
+            background:radial-gradient(ellipse at center, rgba(0,0,255,1) 0%, rgba(0,0,0,1) 100%); /* w3c */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000ff', endColorstr='#000000',GradientType=1 ); /* ie6-9 */
+        }
+        img {
+            position: absolute;
+            top: 35%;
+            left: 40%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Gradient Colors</h1>
+
+    <div></div>
+    <img src="../../images/00-22.gif" alt="">
+    
+</body>
+</html>
