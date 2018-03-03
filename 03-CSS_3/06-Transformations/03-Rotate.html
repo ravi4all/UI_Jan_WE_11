@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            height: 500px;
+            width: 400px;
+            border: 2px solid red;
+            padding: 20px;
+            margin: 0 auto;
+            perspective: 800px;
+        }
+        img {
+            width: 100%;
+            height: inherit;
+            transition: 2s;
+            transform-origin: left;
+            /* box-shadow: 0px 0px 0px #000; */
+            /* filter: grayscale(100%); */
+        }
+        div:hover img {
+            /* transform: rotateX(-360deg); */
+            /* transform: rotateY(360deg); */
+            /* transform: translate(-100px, -200px) rotateZ(3600deg) scale(0.0,0.0); */
+            /* transform: rotateX(-360deg) rotateY(180deg) rotateZ(270deg); */
+            /* transform: rotate3d(1,1,1,360deg); */
+            /* border-radius: 50%; */
+            /* transform: rotateY(360deg); */
+            transform: rotateY(-180deg);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Transform Rotate</h1>
+
+    <div>
+        <img src="../../images/WebImages/559376_436797666338634_107844962567241_1655677_1996973502_n (1).jpg" alt="">
+    </div>
+    
+</body>
+</html>
