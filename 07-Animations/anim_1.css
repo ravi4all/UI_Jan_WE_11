@@ -1,0 +1,43 @@
+body {
+    margin: 0px;
+}
+
+#container {
+    height: 600px;
+    background-image: url("https://citydiscovery2.imgix.net/new_york.jpg?w=2100&h=1100&bri=-12&q=30&auto=format&crop=entropy&fit=crop");
+    background-size: 100% 100%;
+    animation: background_anim 40s linear;
+}
+
+#image {
+    background-image: url("../../images/NewImages/LziFSQN.png");
+    height: 100px;
+    width: 100px;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 70%;
+    top: 0%;
+    transform: scale(0,0);
+    animation: anim_1 10s linear;
+}
+
+@keyframes anim_1 {
+    0% {
+        transform: scale(0,0) translate(0,0) rotate(0deg);
+    }
+    95% {
+        transform: scale(2,2) translate(-10%, 40%) rotate(-50deg);
+    }
+    100% {
+        transform: scale(2,2) translate(-200%, 400%) rotate(-50deg);
+    }
+}
+
+@keyframes background_anim {
+    0% {
+        background-size: 150% 150%;
+    }
+    100% {
+        background-size: 100% 100%;
+    }
+}
