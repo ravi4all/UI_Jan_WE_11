@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            border: 5px solid red;
+            padding: 100px;
+        }
+        img {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+        #parent {
+            position: relative;
+        }
+        /* .child {
+            position: relative;
+        } */
+        .grandchild {
+            position: relative;
+        }
+        .grandchild:after {
+            content: "";
+            position: absolute;
+            background-color: lightcoral;
+            height: 100%;
+            width: 100%;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+        }
+        h2 {
+            position: relative;
+        }
+        h2:after {
+            content: "";
+            border: 2px solid red;
+            position: absolute;
+            left: 0px;
+            top: -10px;
+            width: 5%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Position Relative</h1>
+
+    <div id="parent">
+        <h2>This is inside parent div</h2>
+        <img src="../../images/hulk5-18463.gif" alt="">
+        <div class="child">
+            <h2>This is inside child div</h2>
+            <div class="grandchild">
+                <h2>This is inside grandchild</h2>
+                <!-- <img src="../../images/hulk5-18463.gif" alt=""> -->
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae veniam illo, cum deserunt perspiciatis est error ullam expedita sed libero laborum aut necessitatibus, architecto placeat quae quasi impedit tempore mollitia.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
