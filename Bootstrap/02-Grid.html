@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .red, .green {
+            height: 200px;
+            margin-bottom: 20px;
+        }
+        .red {
+            background-color: red;
+        }
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bootstrap Grid</h1>
+
+    <!-- 1. Always build a container or container fluid first.
+    2. Before making columns there should be a row.
+    3. Row should always be inside a container.
+    4. Only columns can be immediate child of rows.
+    5. Content will be placed inside Columns. -->
+    
+    <div class="container">
+        <section id="section_1">
+            <div class="row">
+                <div class="col-xl-2 col-lg-4 col-sm-6">
+                    <div class="red"></div>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-sm-6">
+                    <div class="green"></div>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-sm-6">
+                    <div class="red"></div>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-sm-6">
+                    <div class="green"></div>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-sm-6">
+                    <div class="red"></div>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-sm-6">
+                    <div class="green"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section_2">
+            <div class="row">
+                <div class="col-lg-3 col-6">
+                    <div class="red"></div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="green"></div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="red"></div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="green"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section_3">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="red"></div>
+                </div>
+                <div class="col-md-8">
+                    <div class="green"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section_4">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="red"></div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="green"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+</body>
+</html>
