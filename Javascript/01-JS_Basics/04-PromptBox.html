@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Prompt Box</h1>
+
+    <button onclick="promptBox()">Click Here</button>
+    
+    <script>
+        function promptBox(){
+            var num_1 = parseInt(prompt("Enter first number : ",0));
+            var num_2 = parseInt(prompt("Enter second number : ",0));
+            result = num_1 + num_2;
+            // Truthy and Falsy
+            // NaN/Undefined/false/0/null
+            if (result){
+                alert("Result is "+result);    
+            }
+            else {
+                promptBox();
+            }
+        }
+    </script>
+</body>
+</html>

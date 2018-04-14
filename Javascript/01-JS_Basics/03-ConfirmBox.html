@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Confirm Box</h1>
+
+    <button onclick="confirmBox()">Click Here</button>
+
+
+    <script>
+        function confirmBox(){
+            var c = confirm("Are you sure you want to quit ?");
+            // console.log(c);
+            if (c) {
+                alert("Bye");
+                window.close()
+            }
+            else {
+                alert("You will stay here");
+            }
+        }
+    </script>
+</body>
+</html>

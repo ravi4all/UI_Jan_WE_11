@@ -1,0 +1,15 @@
+.col_3 {
+    width: 45%;
+    position: relative;
+}
+.tooltip {
+    display: none;
+    top: 0px;
+    position: absolute;
+    background-color: lightblue;
+    padding: 10px;
+    border: 1px solid orange;
+}
+.tooltip.active {
+    display: block;
+}
