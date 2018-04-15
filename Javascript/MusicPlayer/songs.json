@@ -1,0 +1,18 @@
+[
+    {
+        "songname" : 'Faded',
+        "songUrl" : 'songs/faded.mp3'
+    },
+    {
+        "songname" : 'Fifa Worldcup',
+        "songUrl" : 'songs/fifa world cup.mp3'
+    },
+    {
+        "songname" : 'Galti se mistake',
+        "songUrl" : 'songs/Galti.mp3'
+    },
+    {
+        "songname" : 'Linkin Park - Faint',
+        "songUrl" : 'songs/linkin_park-faint.mp3'
+    }
+]

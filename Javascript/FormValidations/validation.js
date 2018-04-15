@@ -13,6 +13,7 @@ function init(){
     span = document.getElementsByTagName("span");
     username.addEventListener("blur", blankCheck);
     userpwd.addEventListener("keyup", passwordStrength);
+    useremail.addEventListener("keyup", validateEmail);
 }
 
 function blankCheck(){
@@ -62,5 +63,16 @@ function passwordStrength(){
     }
     else {
         span[2].innerHTML = "Proceed";
+    }
+}
+
+function validateEmail(){
+    var pattern = /([a-z | 0-9]\w+[@]\w+[.]\w+)/;
+    var match = pattern.test(useremail.value);
+    if(match){
+        span[1].innerHTML = "Proceed";
+    }
+    else {
+        span[1].innerHTML = "Invalid Email";
     }
 }
