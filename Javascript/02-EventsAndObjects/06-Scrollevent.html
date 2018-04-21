@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        #header {
+            background-color: lightblue;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0px;
+            transition: 1s;
+        }
+        #header.inactive {
+            transform: translate(0px,-120px);
+        }
+        #header.active {
+            transform: translate(0px,0px);
+        }
+        #div_1 {
+            height: 500px;
+            margin-top: 120px;
+            background-image: url("../../images/WebImages/awesome-wallpapers-6482-6759-hd-wallpapers.jpg");
+            background-size: 100% 100%;
+        }
+        #content {
+            text-align: center;
+        }
+    </style>
+</head>
+<body onscroll="scrollAnim()">
+
+    <header id="header">
+        <h1>MouseMove</h1>
+    </header>
+
+    <div id="div_1" onmousemove="animateImage(this)"></div>
+
+    <div id="content">
+        <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+        <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+        <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+        <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+        <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+        <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+        <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+        <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+        <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+        <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+        <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+        <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+    </div>
+    
+    <script>
+        function animateImage(obj){
+            var elem = document.getElementById("div_1");
+            var x = event.clientX;
+            var y = event.clientY;
+            // console.log(x,y);
+            elem.style.backgroundPositionX = x*0.1+'px';
+            elem.style.backgroundPositionY = y*0.1+'px';
+        }
+        function scrollAnim(){
+            var scrollPos = window.scrollY;
+            var header = document.querySelector("#header");
+            // console.log(scrollPos);
+            if (scrollPos > 1 && scrollPos < 300) {
+                header.className = 'inactive';
+            }
+            else if(scrollPos > 300) {
+                header.className = "active";
+            }
+            else {
+                header.className = "";
+            }
+        }
+    </script>
+</body>
+</html>

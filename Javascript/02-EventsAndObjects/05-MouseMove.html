@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            height: 500px;
+            background-image: url("../../images/WebImages/awesome-wallpapers-6482-6759-hd-wallpapers.jpg");
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>MouseMove</h1>
+
+    <div id="div_1" onmousemove="animateImage(this)"></div>
+    
+    <script>
+        function animateImage(obj){
+            var elem = document.getElementById("div_1");
+            var x = event.clientX;
+            var y = event.clientY;
+            // console.log(x,y);
+            elem.style.backgroundPositionX = x*0.1+'px';
+            elem.style.backgroundPositionY = y*0.1+'px';
+        }
+    </script>
+</body>
+</html>

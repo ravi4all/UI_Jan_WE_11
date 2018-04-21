@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var windowObject;
+function open_win()
+{
+	windowObject = window.open('','', 'width=900,height=400');
+	windowObject.focus();
+    windowObject.document.write("Hello World");
+}
+function resize()
+{
+	windowObject.resizeTo(500,500);
+	windowObject.focus();
+}
+function moveWin()
+{
+	windowObject.moveBy(250,250);
+	windowObject.focus();
+}
+function closeWin(){
+	windowObject.close();
+}
+
+</script>
+</head>
+
+<body>
+
+<button onclick="open_win()">Open Window</button>
+<button onclick="resize()">Resize window</button>
+<button onclick="moveWin()">Move Window</button>
+<button  onclick="closeWin()"> Close Window</button>
+
+</body>
+
+</html>
