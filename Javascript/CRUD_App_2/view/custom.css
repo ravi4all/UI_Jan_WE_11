@@ -1,0 +1,25 @@
+button {
+    margin-bottom: 15px;
+}
+
+#itemList li {
+    transition: 1s;
+    /* cursor: pointer; */
+}
+
+#itemList li:hover {
+    background-color: lightblue;
+}
+#itemList li.mark {
+    background-color: red;
+}
+
+.btn_1 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.delete_img {
+    width: 6%;
+    cursor: pointer;
+}
