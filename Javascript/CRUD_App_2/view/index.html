@@ -71,15 +71,15 @@
                                 <button id="add" class="btn btn-primary d-block w-100">Add</button>
                                 <button id="delete" class="btn btn-danger d-block w-100">Delete</button>
                                 <button class="btn btn-secondary d-block w-100">Update</button>
-                                <button class="btn btn-success d-block w-100">Save</button>
-                                <button class="btn btn-warning d-block w-100">Load</button>
+                                <button id="save" class="btn btn-success d-block w-100">Save</button>
+                                <button id="load" class="btn btn-warning d-block w-100">Load</button>
                                 <button class="btn btn-primary d-block w-100">Sort</button>
                             
                         </div>
                         <div class="col-md-7">
                             <div class="products">
-                              <h2>Total Products : 0</h2>
-                              <h2>Selected Products : 0</h2>
+                              <h2>Total Products : <span id="tot_count">0</span></h2>
+                              <h2>Selected Products : <span id="selected_count">0</span></h2>
                                 <ul class="list-group" id="itemList">
                                     <!-- <li id="itemList" class="list-group-item"></li> -->
                                 </ul>

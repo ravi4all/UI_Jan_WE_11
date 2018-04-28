@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Why AJAX</h1>
+
+    <input type="text" placeholder="Enter Name">
+    <button onclick="startLogic()">Start Logic</button>
+    <h2 id="heading"></h2>
+    <script>
+        function startLogic(){
+            one();
+            two();
+            three();
+            four();
+            five();
+            six();
+        }
+        function one(){
+            console.log("Function one");
+        }
+        function two(){
+            console.log("Function two");
+        }
+        function three(){
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function(){
+                // console.log("Ready state is",this.readyState);
+                // console.log("Status is",this.status);
+                if(this.readyState == 4 && this.status == 200){
+                    console.log("Function three");
+                }
+            }
+            xhttp.open('get','');
+            xhttp.send();
+        }
+        function four(){
+            console.log("Function four");
+        }
+        function five(){
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function(){
+                // console.log("Ready state is",this.readyState);
+                // console.log("Status is",this.status);
+                if(this.readyState == 4 && this.status == 200){
+                    console.log("Function five");
+                }
+            }
+            xhttp.open('get','');
+            xhttp.send();
+        }
+        function six(){
+            console.log("Function six");
+        }
+    </script>
+
+<!-- 
+readyState	Holds the status of the XMLHttpRequest.
+0: request not initialized
+1: server connection established
+2: request received
+3: processing request
+4: request finished and response is ready
+
+status	Returns the status-number of a request
+200: "OK"
+403: "Forbidden"
+404: "Not Found" -->
+
+
+</body>
+</html>

@@ -11,7 +11,24 @@ function init(){
 
     document.querySelector("#add").addEventListener("click", addItem);
     document.querySelector("#delete").addEventListener("click",deleteItem);
+    document.querySelector("#save").addEventListener("click", saveData);
+    document.querySelector("#load").addEventListener("click", loadData);
+}
 
+function saveData(){
+    if(window.localStorage){
+        var json = JSON.stringify(obj.itemList);
+        localStorage.setItem('shopData',json);
+    }
+    else {
+        alert("Localstorage not supported...");
+    }
+}
+
+function loadData(){
+    var data = localStorage.getItem('shopData');
+    obj.itemList = JSON.parse(data);
+    printItem();
 }
 
 function addItem(){
@@ -35,17 +52,32 @@ function addItem(){
 
     img.addEventListener("click", markItem);
 
+    printCount()
+
+}
+
+function printCount(){
+    tot_count = document.querySelector("#tot_count");
+    tot_count.innerHTML = obj.totalProducts();
 }
 
 function markItem(){
     event.srcElement.parentElement.classList.toggle("mark");
     var current_id = event.srcElement.parentElement.innerHTML.split(" ")[0];
     obj.toggleItem(current_id);
+    selectedCount();
+}
+
+function selectedCount(){
+    var s_count = document.querySelector("#selected_count");
+    s_count.innerHTML = obj.selectedCount();
 }
 
 function deleteItem(){
     obj.deleteItem();
     printItem();
+    printCount();
+    selectedCount();
 }
 
 function printItem(){

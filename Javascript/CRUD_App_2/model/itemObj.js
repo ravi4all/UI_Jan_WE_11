@@ -22,6 +22,17 @@ var obj = {
             return x.selected == false;
         })
         // console.log(this.itemList);
+    },
+
+    totalProducts : function(){
+        return this.itemList.length;
+    },
+
+    selectedCount : function(){
+        len = this.itemList.filter(function(x){
+            return x.selected == true;
+        });
+        return len.length;
     }
 
 }
