@@ -1,0 +1,152 @@
+function parent(){
+	console.log("This is parent function");
+	function child(){
+		console.log("This is child function");
+	}
+}
+undefined
+parent()
+VM1691:2 This is parent function
+undefined
+function parent(){
+	console.log("This is parent function");
+	function child(){
+		console.log("This is child function");
+	}
+	child()
+}
+undefined
+parent()
+VM1709:2 This is parent function
+VM1709:4 This is child function
+undefined
+function parent(){
+	var x = 10;
+	function child(){
+		return x += 1;
+	}
+	child()
+}
+undefined
+parent()
+undefined
+function parent(){
+	y = 10;
+	function child(){
+		return y += 1;
+	}
+	child()
+}
+undefined
+parent()
+undefined
+function parent(){
+	y = 10;
+	function child(y){
+		return y += 1;
+	}
+	child(y)
+}
+undefined
+parent()
+undefined
+function parent(){
+	y = 10;
+	function child(){
+		console.log(y);
+		return y += 1;
+	}
+	child()
+}
+undefined
+parent()
+VM1745:4 10
+undefined
+function parent(){
+	y = 10;
+	function child(){
+		y += 1;
+		console.log(y);
+	}
+	child()
+}
+undefined
+parent()
+VM1751:5 11
+undefined
+parent()
+VM1751:5 11
+undefined
+parent()
+VM1751:5 11
+undefined
+function parent(){
+	y = 10;
+	function child(){
+		return y += 1;
+	}
+	return child
+}
+undefined
+parent()
+ƒ child(){
+		return y += 1;
+	}
+c = parent()
+ƒ child(){
+		return y += 1;
+	}
+typeof(c)
+"function"
+c()
+11
+c()
+12
+c()
+13
+c()
+14
+function parent(){
+	z = 10;
+	function child(){
+		return z += 1;
+	}
+	return child
+}
+undefined
+i = parent()
+ƒ child(){
+		return z += 1;
+	}
+i()
+11
+i()
+12
+i()
+13
+function parent(){
+	var z = 10;
+	return function(){
+		return z += 1;
+	}
+}
+undefined
+parent()
+ƒ (){
+		return z += 1;
+	}
+x = parent()
+ƒ (){
+		return z += 1;
+	}
+x()
+11
+x()
+12
+x()
+13
+(function(){
+	console.log("This is IIFE example...");
+})()
+VM1841:2 This is IIFE example...
+undefined
