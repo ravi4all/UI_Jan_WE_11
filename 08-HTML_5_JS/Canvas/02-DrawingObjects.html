@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Canvas Basic Usage</h1>
+    
+    <canvas id="canvas" height="300" width="300">
+        <p>Your browser does not support HTML5 Canvas</p>
+    </canvas>
+    
+    <script>
+        var canvas = document.getElementById("canvas");
+        var context = canvas.getContext('2d');
+        context.fillRect(25,25,250,250);
+        context.clearRect(125,125,50,50);
+        context.strokeRect(0,0,300,300);
+    </script>
+</body>
+</html>

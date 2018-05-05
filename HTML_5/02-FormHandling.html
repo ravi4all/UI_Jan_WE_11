@@ -69,10 +69,34 @@
             <tr>
                 <td>Select Range</td>
                 <td>
-                    <input type="range" value="0" max="2000" min="1000" onchange="output.value=value" step="100">
+                    <input type="range" value="0" max="100" min="0" onchange="output.value=value" step="1">
                 </td>
                 <td>
-                    <output id="output"></output>
+                    <!-- <output id="output"></output> -->
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Card Number</td>
+                <td>
+                    <input type="text" pattern="[A-Z]{3}[0-9]{4}" title="3 Upper case and then 4 digits">
+                </td>
+            </tr>
+            <tr>
+                <td>Your Progress</td>
+                <td>
+                    <progress id="output" value="30" max="100"></progress>
+                </td>
+            </tr>
+            <tr>
+                <td>Upload File</td>
+                <td>
+                    <input type="file">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Comments</td>
+                <td>
+                    <textarea spellcheck="true" cols="30" rows="10" style="resize:none;"></textarea>
                 </td>
             </tr>
             <tr>
