@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Jquery Effects</h1>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+    <br><br>
+
+    <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+
+    <script src="../jquery-3.3.1.min.js"></script>
+    <script>
+        $("#hide").on("click", function(){
+            $("img").hide(1000);            
+        });
+        $("#show").on("click", function(){
+            $("img").show(1000);            
+        });
+        $("#toggle").on("click", function(){
+            $("img").toggle(1000);
+        });
+    </script>
+</body>
+</html>

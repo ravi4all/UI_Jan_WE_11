@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="dynamic_scroll.css"/>
+</head>
+<body>
+
+<header id="header">
+    <h1>This is header</h1>
+</header>
+
+<div id="content">
+    <div class="left">
+        <img src="../images/WebImages/panda-6.jpg" alt="image"/>
+        <img src="../images/WebImages/panda-6.jpg" alt="image"/>
+    </div>
+    <div class="right">
+        <img src="../images/WebImages/panda-6.jpg" alt="image"/>
+        <img src="../images/WebImages/panda-6.jpg" alt="image"/>
+    </div>
+</div>
+
+<div id="section_1" class="anim">
+    <img src="../images/NewImages/Thor-Transparent-PNG.png" alt="image"/>
+</div>
+
+<div id="section_2" class="anim">
+    <img src="../images/NewImages/Thor-Transparent-PNG.png" alt="image"/>
+</div>
+
+<div id="section_3" class="anim">
+    <img src="../images/NewImages/Thor-Transparent-PNG.png" alt="image"/>
+</div>
+
+<div id="section_4" class="anim">
+    <img src="../images/NewImages/Thor-Transparent-PNG.png" alt="image"/>
+</div>
+
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+    $(window).scroll(function(){
+        var window_scroll_pos = $(window).scrollTop();
+        scroll_pos = $("#section_1,#section_2,#section_3").offset().top;
+       console.log(scroll_pos);
+        scroll_y = window_scroll_pos - scroll_pos;
+        //  console.log(scroll_y);
+        /*console.log("Scroll...",$(window).height() - scroll_pos);*/
+        if(scroll_y > $(window).height() - 600) {
+            console.log(scroll_y);
+            $("#section_1,#section_2,#section_3").addClass("active");
+        }
+        else {
+            $("#section_1,#section_2,#section_3").removeClass("active");
+        }
+
+    })
+</script>
+
+</body>
+</html>

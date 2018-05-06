@@ -1,0 +1,37 @@
+body {
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+
+#header {
+    background-color: #c9e2b3;
+    text-align: center;
+    padding: 20px 0px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    transition: 1s;
+}
+
+
+#content {
+    text-align: center;
+    margin-top: 130px;
+    display: flex;
+}
+
+#section_1 img, #section_3 img {
+    transform: translate(-150%,0px);
+    transition: 0.5s;
+}
+#section_2 img, #section_4 img {
+    transform: translate(350%,0px);
+    transition: 0.5s;
+}
+
+#section_1.active img,
+#section_2.active img,
+#section_3.active img {
+    transform: translate(0px, 0px);
+}

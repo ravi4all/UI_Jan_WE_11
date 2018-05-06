@@ -1,0 +1,44 @@
+body {
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+
+#header {
+    background-color: #c9e2b3;
+    text-align: center;
+    padding: 20px 0px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    transition: 1s;
+    opacity: 0;
+    z-index: -1;
+}
+body.scroll_active #header{
+    padding: 5px 0px;
+    background-color: #d43f3a;
+    opacity: 1;
+    z-index: 1;
+}
+
+
+#content {
+    text-align: center;
+    margin-top: 130px;
+    display: flex;
+}
+
+#content .left img {
+    transition: 1s;
+    transform: translate(-150%,0px) rotate(0deg);
+}
+
+#content .right img {
+    transition: 1s;
+    transform: translate(150%,0px) rotate(0deg);
+}
+
+body.scroll_active #content .left img,body.scroll_active #content .right img {
+    transform: translate(0px,0px) rotate(360deg);
+}

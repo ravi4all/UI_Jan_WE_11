@@ -1,0 +1,18 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+#inner_container {
+    height: 600px;
+    overflow: hidden;
+    width: 10000px;
+    background-image: url('assets/citytiled1.png');
+    background-size: auto 100%;
+    transition: 1s;
+}
+#image {
+    position: fixed;
+    bottom: 10%;
+    left: 40%;
+    z-index: 100;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .red {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Form Validation</h1>
+
+    <input type="text" placeholder="Enter Name">
+    <button>Submit</button>
+    
+    <script src="../jquery-3.3.1.min.js"></script>
+    <script>
+        $("button").click(function(){
+            var username = $("input");
+            if(username.val() == ""){
+                // username.css("border","1px solid red");
+                username.addClass('red');
+            }
+            else {
+                username.removeClass('red');
+            }
+        })
+    </script>
+</body>
+</html>

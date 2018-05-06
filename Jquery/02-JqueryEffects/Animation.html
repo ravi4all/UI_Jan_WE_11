@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../jquery-3.3.1.min.js"></script>
+</head>
+<body>
+   
+   <h1>Jquery Events</h1>
+   <button class="animate">Animate</button> <br>
+   <img src="http://media2.intoday.in/indiatoday/images/stories/647_010517091159.jpg" alt="image" height="300" width="600">
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".animate").click(function(){
+	    //    $("img").animate({
+	    //   left:'550px',
+	    //   opacity:'0.5',
+	    //   height:'350px',
+	    //   width:'650px'
+	    // });
+	  var img=$("img");
+	    img.animate({height:'400px',opacity:'0.4'},1000);
+	    img.animate({width:'500px',opacity:'0.8'},1000);
+	    img.animate({height:'100px',opacity:'0.4'},"slow");
+	    img.animate({width:'100px',opacity:'0.8'},"slow");
+});
+    });
+</script>
+    
+</body>
+</html>
